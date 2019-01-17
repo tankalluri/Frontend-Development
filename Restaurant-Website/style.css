@@ -1,0 +1,60 @@
+body{background-image: url(breakfast.jpg); font: small-caption; font-family: Georgia, 'Times New Roman', Times, serif}
+header{background-position: right; background-image: url(bird.png); line-height:  1000%; font-size: 16px; text-indent: 30em; color:navy; background-color: powderblue;}
+footer{text-indent: 90%; justify-content: space-between;}
+span{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; color:midnightblue}
+marquee{color: brown}
+.centered {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+ }
+h2{font-family: Georgia, 'Times New Roman', Times, serif}
+.container {
+            position: relative;
+            text-align: center;
+            color: blue}
+.cent {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.middle {
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+                }
+.la {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+                }
+.lunch{
+            color: midnightblue; font-size: 18px;
+        }
+.breakfast{
+            color: darkslateblue; font-size: 20px;
+        }
+.drinks{
+            color: aliceblue; font-size: 20px;
+        }
+.foot{
+    top: 80%;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+}
+.trinet{
+    text-align: right;
+}
+.foote{
+    top: 370%;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+}

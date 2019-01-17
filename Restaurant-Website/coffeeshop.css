@@ -1,0 +1,50 @@
+        body{background-image: url(breakfast.jpg); 
+        font: small-caption; font-family: Georgia, 'Times New Roman', Times, serif}
+        header{background-position: right; background-image: url(bird.png); line-height:  1000%; 
+        font-size: 16px; text-indent: 30em; color:navy; background-color: powderblue;}
+        span.hor{font-family: fantasy; font-size: 20px; color: midnightblue}
+        span{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; color:midnightblue}
+        marquee{color: brown}
+        div.gallery {
+            margin: 20px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 1450px;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+            color:red;
+                    }
+        .alignLeft {
+            float: left;
+                    }
+        .alignRight {
+            float: right;
+                    }
+        img.back{width: 100%}
+        div.gallery:hover {
+            border: 1px solid #777;
+            border-radius: 25px;
+            box-shadow: 10px -10px gray
+                    }
+        div.gallery img {
+            width: px;
+            height: 150px;  
+            display: block;  
+                    }
+        div.description {
+            text-align: center;
+            padding: 10px;    
+                    }
+         .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+                    }
+        .foot{
+            top: 200%;
+            position: absolute;
+            text-align: center;
+            left: 40%;
+              }
