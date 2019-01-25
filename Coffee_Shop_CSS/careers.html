@@ -9,33 +9,38 @@
         <title>Truffles Coffee Shop</title>
     </head>
     <body>
-        <header><img src="logo.png" height="150px" width="900px" style="margin-left: 100px; margin-top: -120px; background: floralwhite; border-radius: 55px"></header>
+        <header><img src="logo.png" height="150px" width="900px"></header>
         <nav>
-            <ul> 
-             <li><a href="Home.html">Home</a></li>
-               <li><a href="breakfast.html">Menu</a>
-                <ul>
-                  <li><a href="breakfast.html">Breakfast</a></li>
-                  <li><a href="lunch.html">Lunch</a></li>
-                  <li><a href="dinner.html">Dinner</a></li>
-                </ul>
-               </li>
-               <li><a href="imageGallery.html">Image Gallery</a></li>
-               <li><a href="careers.html">Careers</a></li>
-             </ul>
-           </nav>
+                <ul> 
+                 <li><a href="Home.html">Home</a></li>
+                <li><a href="breakfast.html">Menu</a>
+                    <ul>
+                      <li><a href="breakfast.html">Breakfast</a></li>
+                      <li><a href="dinner.html">Dinner</a></li>
+                      <li><a href="lunch.html" class="test">Lunch</a>
+                        <ul>
+                                <li><a href="lunch.html">Continental</a></li>
+                                <li><a href="lunch.html">Oriental</a></li>
+                        </ul>
+                </li>
+                    </ul>
+                   </li>
+                   <li><a href="imageGallery.html">Gallery</a></li>
+                   <li><a href="careers.html">Careers</a></li>
+                 </ul>
+               </nav>
            <main>
-            <form style="margin-left: 550px; margin-top: 30px;" method="GET" action="home.html">
-                <label style="margin-left: 25px; color: mediumblue; font-size: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><b>JOB APPLICATION FORM</b></label><br><br>
-                <div style="font-size: 20px; color: royalblue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
-                 <label>Name:</label>
-                <input type="text" style="margin-left: 100px;"/><br><br>
+            <form method="GET" action="home.html" id="res">
+                <label class="lab"><b>JOB APPLICATION FORM</b></label><br><br>
+                <div class="for">
+                <label>Name:</label>
+                <input type="text" id="name"/><br><br>
                 <label>Address:</label>
-                <textarea rows="4" cols="20" style="margin-left: 78px;"></textarea><br><br>
+                <textarea rows="4" cols="20" id="add"></textarea><br><br>
                 <label>Contact Number:</label>
-                <input type="tel" style="margin-left: 12px;"/><br><br>
+                <input type="tel" id="cont"/><br><br>
                 <label>Email ID:</label>
-                <input type="email" style="margin-left: 79px;"/><br><br>
+                <input type="email" id="email"/><br><br>
                 <label>Type of employment</label>
                 <input type="radio">Internship
                 <input type="radio">Full-Time<br><br>
@@ -46,12 +51,12 @@
                 <input type="radio">Spring 2019
                 <input type="radio">Summer 2019
                 <input type="radio">Fall 2019<br><br>
-                <input type="submit" style="border-radius: 20px; background-color: steelblue; color: white; font-size: 20px; margin-left: 160px"onclick="window.confirm('Submitted successfully!')">
+                <input type="submit" class="sub" onclick="window.confirm('Submitted successfully!')">
                 </div>
             </form>
             </main>
         <footer>
-            <div class="foot">
+            <div>
                 <div><h3>&nbsp; &copy;Truffles Coffee Shop  <a href="TermsAndConditions.html">Terms and Conditions</a>  &nbsp; &nbsp;
                     <a href="mailto:truffles.coffeeshop@hotmail.com">  Mail</a>&nbsp;</h3></div>
             </div>
