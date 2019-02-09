@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	</style>
+	<script src="script.js" type="text/javascript"></script>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" novalidate id="myForm">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required" onchange="validateTitle();"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required" onchange="validateTitle();"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required" onchange="validateTitle();"/>Mrs.
+			<br>
+			<label id="ti">Please select a title</label><br><br><br>
+
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" onkeyup="validateFirstName();"/>
+			<br>
+			<label id="fn">Please enter the first name</label><br><br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" onkeyup="validateLastName();"/>
+			<br>
+			<label id="ln">Please enter the last name</label><br><br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" onkeyup="validateEmail();"/>
+			<br>
+			<label id="em">Please enter the email</label><br><br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" onkeyup="validatePhoneNumber(this);"/>
+			<br>
+			<label id="ph">Please enter the phone number</label><br><br><br>
+			
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" onkeyup="validateZipCode(this);"/>
+			<br>
+			<label id="zc">Please enter the zip code</label><br><br><br>
+			
+			<label for="languages">Beverages Available:</label>
+			<!-- <select id="thelist" multiple> -->
+			<!-- <select id="thelist" size=5 onchange="selectBeverage();"> -->
+			<select id="thelist" onchange="selectBeverage();">
+					<option value="other">Select an option</option>
+					<option value="coffee">Coffee</option>
+					<option value="tea">Tea</option>
+					<option value="iceTea">Ice Tea</option>
+					<option value="coke">Coke</option>
+					<option value="bubbleTea">Bubble Tea</option>
+			</select>
+			<br><br>
+
+			<span id="bev"></span>
+			<span id="bevTxt"><input type="text" id="beverageComment" onkeyup="validateBeverageComment();"/></span>
+			<br>
+			<label id="bcm">Please select a beverage and enter a comment</label><br><br><br>
+
+            <label for="zipcode" id="zip">How did you hear*:</label>
+			<input type='checkbox' id="fb" value="facebook" onchange="validateBox();"/> Facebook
+            <input type='checkbox' id="google" value="google" onchange="validateBox();"/> Google
+            <input type='checkbox' id="yelp" value="yelp" onchange="validateBox();"/> Yelp 
+						<br>
+						<label id="cb">Please select one of the checkboxes</label><br><br><br>
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" onkeyup="validateComment();"></textarea>
+			<br>
+			<label id="cm">Please enter a comment</label><br><br><br>
+			<input type="Submit" value="Submit" onclick="validate();">
+			<input type="Reset" value="Reset" onclick="resetForm();">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+</body>
+</html>
