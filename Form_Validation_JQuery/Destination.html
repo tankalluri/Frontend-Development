@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirm Page</title>
+    <style>
+        label {	float: left;
+                width: 150px;}
+          #container{
+              width: 700px;
+              margin: auto;
+              background-color: beige;
+          } 
+          main{
+              padding: 50px;
+          }
+      </style>
+    <script type="text/javascript">
+    var fname= localStorage.getItem("firstName");
+    var lname= localStorage.getItem("lastName");
+    var emailId= localStorage.getItem("emailId");
+    var phoneNumber= localStorage.getItem("phoneNumber");
+    var zipCode= localStorage.getItem("zipcode");
+    var fb= localStorage.getItem("fb");
+    var google= localStorage.getItem("google");
+    var yelp= localStorage.getItem("yelp");
+    var fb= localStorage.getItem("fb");
+    var google= localStorage.getItem("google");
+    var yelp= localStorage.getItem("yelp");
+    var bevComment=localStorage.getItem("bevComment");
+    var chosenBev=localStorage.getItem("chosenBev");
+    var hear="";
+    if(yelp=="yes" && fb=="yes" && google=="yes")
+        hear="Yelp, Facebook, Google";
+   	else if(yelp=="yes" && fb=="yes" && google=="no")
+			hear="Yelp, Facebook"
+		else if(yelp=="yes" && fb=="no" && google=="yes")
+			hear="Yelp, Google"
+		else if(yelp=="no" && fb=="yes" && google=="yes")
+			hear="Facebook, Google"
+		else if(yelp=="no" && fb=="no" && google=="yes")
+			hear="Google"
+		else if(yelp=="no" && fb=="yes" && google=="no")
+			hear="Facebook"
+		else if(yelp=="yes" && fb=="no" && google=="no")
+			hear="Yelp"
+		else if(yelp=="no" && fb=="no" && google=="no")
+			hear="Other"
+
+    var comments= localStorage.getItem("comments");
+    var title=localStorage.getItem("title");
+    window.onload = function() {
+    document.getElementById("title").innerHTML=title;
+    document.getElementById("fname").innerHTML=fname;
+    document.getElementById("lname").innerHTML=lname;
+    document.getElementById("email").innerHTML=emailId;
+    document.getElementById("phone").innerHTML=phoneNumber;
+    document.getElementById("zip").innerHTML=zipCode;
+    document.getElementById("comment").innerHTML=comments;
+    document.getElementById("heard").innerHTML=hear;
+    document.getElementById("bevComment").innerHTML=bevComment;
+    document.getElementById("chosenBev").innerHTML=chosenBev;
+    }
+    </script>
+
+</head>
+<body>
+    <div id="container">
+       <main>
+        <h3>Please confirm your details</h3>
+            <br><br>
+            <table border="1">
+                <tr>
+                    <td>Title:</td>
+                    <td id="title"></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td id="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td id="lname"></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td id="phone"></td>
+                </tr>
+                <tr>
+                    <td>Zip Code:</td>
+                    <td id="zip"></td>
+                </tr>
+                <tr>
+                    <td>Comments:</td>
+                    <td id="comment"></td>
+                </tr>
+                <tr>
+                    <td>You heard us from:</td>
+                    <td id="heard"></td>
+                </tr>
+                <tr>
+                    <td>Chosen Beverage:</td>
+                    <td id="chosenBev"></td>
+                </tr>
+                <tr>
+                    <td>Beverage Comment:</td>
+                    <td id="bevComment"></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+   </body>
+</html>
